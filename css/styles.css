@@ -3,7 +3,17 @@
 * MvdTropical
 */
 
-
-header h1 {
+#gohome {
+    /* width: 2em; */
+    /* height: 2em; */
+    padding: 0.25em 0.5em 0 0.5em;
+    border-radius: 50%;
+    background-color: rgb(120, 120, 120);
+    color: rgb(254, 254, 254);
     text-align: center;
+    font-size: 2em;
+    position: relative;
+    bottom: 0;
+    left: 45%;
+    text-decoration: none;
 }

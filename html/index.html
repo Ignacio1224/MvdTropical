@@ -18,11 +18,11 @@
 
 <body class="bg-dark">
     <div class="container">
-        <header class="text-white">
-            <h1 class="d-none d-sm-block col-md-12">Montevideo Tropical</h1>
-        </header>
+        <div id="home"></div>
+        <h1 class="d-none d-sm-block col-md-12 text-white text-center">Montevideo Tropical</h1>
 
         <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <h1 class="d-xs-block col-xs-10 d-sm-none text-white">Montevideo Tropical</h1>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-menu-principal"
                 aria-controls="nav-menu-principal" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -37,48 +37,45 @@
             </div>
         </nav>
 
-
-        <div>
-            <!-- Slider -->
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img class="d-block w-100" src="../images/mvdT_01.jpg" alt="First slide">
+        <div class="bg-light p-2">
+            <div class="d-none d-sm-block col-sm-12">
+                <!-- Slider -->
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="../images/mvdT_01.jpg" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="../images/mvdT_02.jpg" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="../images/mvdT_03.jpg" alt="Third slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="../images/mvdT_04.jpg" alt="Four slide">
+                        </div>
                     </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="../images/mvdT_02.jpg" alt="Second slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="../images/mvdT_03.jpg" alt="Third slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="../images/mvdT_04.jpg" alt="Four slide">
-                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
             </div>
-        </div>
 
-        <!-- Informacion -->
-        <h1 id="informacion">Información</h1>
-        <section>
-
-            <figure class="order">
-                <img src="../images/mvdT_logo.jpg" alt="lo que sea">
-                <figcaption>
+            <!-- Informacion -->
+            <h1 id="informacion" class="text-secondary">Información</h1>
+            <section>
+                <article>
                     <h2>Festival por la convivencia</h2>
                     <p>
                         Los días 10, 17 y 18 de noviembre en la Rural del Prado (Lucas Obes 1011) se realizarán dos
@@ -116,272 +113,288 @@
                         a la que ofrecen las grandes bandas internacionales.
                     </p>
 
-                </figcaption>
-            </figure>
+                </article>
+                <h2 class="d-sm-none d-xs-block col-xs-2">Montevideo Tropical</h2>
+                <figure>
+                    <img src="../images/mvdT_logo.jpg" class="img-fluid" alt="lo que sea">
+                    <figcaption class="d-sm-none d-xs-block col-xs-2">Montevideo Tropical</figcaption>
+                </figure>
 
-            <aside>
-                <h2>Consideraciones</h2>
+                <aside class="d-none">
+                    <h2>Consideraciones</h2>
 
-                <strong>No se permite</strong>
-                <p>Ingreo de pirotecnia</p>
+                    <strong>No se permite</strong>
+                    <p>Ingreo de pirotecnia</p>
 
-                <strong>Se quitarán en la puerta</strong>
-                <p>Elementos peligrosos</p>
+                    <strong>Se quitarán en la puerta</strong>
+                    <p>Elementos peligrosos</p>
 
-                <strong>Se controlará</strong>
-                <p>El ingreso de cámara de fotos y video</p>
+                    <strong>Se controlará</strong>
+                    <p>El ingreso de cámara de fotos y video</p>
 
-                <strong>Derechos</strong>
-                <p>El evento puede ser filmado, por lo cual el público asistente cede sus derechos de imagen</p>
+                    <strong>Derechos</strong>
+                    <p>El evento puede ser filmado, por lo cual el público asistente cede sus derechos de imagen</p>
 
-                <strong>Ingreso</strong>
-                <p>Entrada por Pelossi</p>
+                    <strong>Ingreso</strong>
+                    <p>Entrada por Pelossi</p>
 
-            </aside>
+                </aside>
+
+                
+                <figure class="d-none">
+                    <img src="../images/icon1.jpg" alt="Imagen simbolizando el lugar">
+                    <figcaption>
+                        <h3>¿Dónde?</h3>
+                        <p>Rural del Prado (acceso por Avenida Buschental)</p>
+                    </figcaption>
+                </figure>
+
+                <figure class="d-none">
+                    <img src="../images/icon2.jpg" alt="Imagen de un calendario">
+                    <figcaption>
+                        <h3>¿Cuándo?</h3>
+                        <p>Sábado 10 de noviembre a partir de las 16 horas</p>
+                    </figcaption>
+                </figure>
+
+                <figure class="d-none">
+                    <img src="../images/icon3.jpg" alt="Imagen del signo de dinero">
+                    <figcaption>
+                        <h3>Costo</h3>
+                        <p>$300 o dos por $500 en venta vía web en <a href="http://reduts.com.uy/">Red UTS</a> o en
+                            locales
+                            de cobranza de <a href="http://www.redpagos.com.uy/">Red Pagos</a> y en locales de <a href="https://www.tiendainglesa.com.uy/">Tienda
+                                Inglesa</a></p>
+                    </figcaption>
+                </figure>
+
+            </section>
+
+            <!-- Bandas -->
+            <h1 id="bandas" class="text-secondary">Bandas</h1>
+            <section>
+
+                <h2>Tarde</h2>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th scope="col">Hora</th>
+                            <th scope="col">Artista</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>16:00 hs</td>
+                            <td>La Zubicaray</td>
+                        </tr>
+                        <tr>
+                            <td>16:30 hs</td>
+                            <td>Mestizo</td>
+                        </tr>
+                        <tr>
+                            <td>17:00 hs</td>
+                            <td>Sonido Cotopaxi</td>
+                        </tr>
+                        <tr>
+                            <td>17:30 hs</td>
+                            <td>Javier Pacheco</td>
+                        </tr>
+                        <tr>
+                            <td>18:00 hs</td>
+                            <td>Banda Zeta</td>
+                        </tr>
+                        <tr>
+                            <td>18:20 hs</td>
+                            <td>La Cumana</td>
+                        </tr>
+                        <tr>
+                            <td>18:45 hs</td>
+                            <td>La Sabrosura</td>
+                        </tr>
+                        <tr>
+                            <td>19:00 hs</td>
+                            <td>La Carátula</td>
+                        </tr>
+                        <tr>
+                            <td>19:20 hs</td>
+                            <td>Sonido Cristal</td>
+                        </tr>
+                        <tr>
+                            <td>19:40 hs</td>
+                            <td>Super Hobby</td>
+                        </tr>
+                        <tr>
+                            <td>19:50 hs</td>
+                            <td>Damián Lescano</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h2>Noche</h2>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th scope="col">Hora</th>
+                            <th scope="col">Artista</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>20:00 hs</td>
+                            <td>Los Fatales</td>
+                        </tr>
+                        <tr>
+                            <td>20:30 hs</td>
+                            <td>Vanessa Britos</td>
+                        </tr>
+                        <tr>
+                            <td>20:50 hs</td>
+                            <td>Tamo en vivo</td>
+                        </tr>
+                        <tr>
+                            <td>21:00 hs</td>
+                            <td>Dos mujeres</td>
+                        </tr>
+                        <tr>
+                            <td>21:15 hs</td>
+                            <td>Marihel Barboza y su banda</td>
+                        </tr>
+                        <tr>
+                            <td>21:30 hs</td>
+                            <td>Fabricio Mosquera</td>
+                        </tr>
+                        <tr>
+                            <td>22:00 hs</td>
+                            <td>Bola 8</td>
+                        </tr>
+                        <tr>
+                            <td>22:30 hs</td>
+                            <td>Majo y la del 13</td>
+                        </tr>
+                        <tr>
+                            <td>22:45 hs</td>
+                            <td>Los Negroni</td>
+                        </tr>
+                        <tr>
+                            <td>23:00 hs</td>
+                            <td>Karibe con K</td>
+                        </tr>
+                        <tr>
+                            <td>23:15 hs</td>
+                            <td>Martín Quiroga</td>
+                        </tr>
+                        <tr>
+                            <td>23:30 hs</td>
+                            <td>Marcos da Costa</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Inscripción A Sorteo -->
+            <h1 id="inscripcion-sorteo" class="text-secondary">Inscripción A Sorteo</h1>
+            <section class="p-3">
+                <div class="d-none embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=bdL7go7H9_I"
+                        allowfullscreen></iframe>
+                </div>
+                <h2>Sorteamos 20 entradas dobles</h2>
+                <form method="POST" action="#">
+                    <p>(*) Todos los campos son obligatorios. Publicaremos los resultados en la web oficial</p>
+                    <fieldset disabled>
+                        <div class="form-group">
+                            <label for="txtMail">Mail (*)</label>
+                            <input type="text" id="txtMail" class="form-control">
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary">Inscribirme!</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
 
 
-            <figure class="order">
-                <img src="../images/icon1.jpg" alt="Imagen simbolizando el lugar">
-                <figcaption>
-                    <h3>¿Dónde?</h3>
-                    <p>Rural del Prado (acceso por Avenida Buschental)</p>
-                </figcaption>
-            </figure>
+            <!-- Novedades -->
+            <h1 id="novedades" class="text-secondary">Novedades</h1>
+            <section>
+                <figure class="d-none">
+                    <img src="../images/noti1.jpg" alt="Imagen con fondo azul y texto en blanco: Montevideo Tango">
+                    <figcaption>
+                        <h3>El Tango, patrimonio de tu ciudad</h3>
+                        <p>
+                            Con actividades abiertas libres y gratuitas, más de 100 artistas de Uruguay y Argentina y
+                            gran
+                            producción artística, la Plaza Matriz será anfitriona de la primera edición de Montevideo
+                            Tango.
+                        </p>
+                    </figcaption>
+                </figure>
 
-            <figure class="order">
-                <img src="../images/icon2.jpg" alt="Imagen de un calendario">
-                <figcaption>
-                    <h3>¿Cuándo?</h3>
-                    <p>Sábado 10 de noviembre a partir de las 16 horas</p>
-                </figcaption>
-            </figure>
+                <figure class="d-none">
+                    <img src="../images/noti2.jpg" alt="Mapa de Paso Molino">
+                    <figcaption>
+                        <h3>Montevideo de las Artes llega a Paso Molino</h3>
+                        <p>
+                            El Festival Montevideo de las Artes cerrará su ciclo de espectáculos barriales en Paso
+                            Molino.
+                        </p>
+                    </figcaption>
+                </figure>
 
-            <figure class="order">
-                <img src="../images/icon3.jpg" alt="Imagen del signo de dinero">
-                <figcaption>
-                    <h3>Costo</h3>
-                    <p>$300 o dos por $500 en venta vía web en <a href="http://reduts.com.uy/">Red UTS</a> o en locales
-                        de cobranza de <a href="http://www.redpagos.com.uy/">Red Pagos</a> y en locales de <a href="https://www.tiendainglesa.com.uy/">Tienda
-                            Inglesa</a></p>
-                </figcaption>
-            </figure>
+                <figure class="d-none">
+                    <img src="../images/noti3.jpg" alt="Imagen con el logo para el año 2018 de la carrera de San Felipe y Santiago">
+                    <figcaption>
+                        <h3>Inscripciones abiertas para correr la San Felipe y Santiago</h3>
+                        <p>
+                            Están abiertas las preinscripciones para participar en la 24ª edición de la carrera San
+                            Felipe
+                            y Santiago, que se realizará el sábado 17 de noviembre por la rambla montevideana.
+                        </p>
+                    </figcaption>
+                </figure>
 
-        </section>
+                <figure class="d-none">
+                    <img src="../images/noti4.jpg" alt="Imagen con el logo para el año 2018 de la fiesta de los jóvenes">
+                    <figcaption>
+                        <h3>Viví Mojo, una fiesta que celebra la juventud</h3>
+                        <p>
+                            Desde el 3 al 16 de noviembre tendrá lugar la primera bienal de la Juventud de Montevideo,
+                            con
+                            espectáculos en vivo, actividades, fotogalería, ferias y más, con entrada libre, en el
+                            Parque
+                            Rodó.
+                        </p>
+                    </figcaption>
+                </figure>
 
-        <!-- Bandas -->
-        <h1 id="bandas">Bandas</h1>
-        <section>
+                <figure>
+                    <img src="../images/noti5.jpg" class="img-fluid" alt="Imagen con el logo para el año 2018 de Montevideo Rock">
+                    <figcaption>
+                        <h3>Montevideo Rock</h3>
+                        <p>
+                            El evento se realizará en la Rural del Prado de Montevideo. Es el lugar ideal por sus
+                            condiciones e infraestructura y porque fue donde se realizó el primer Montevideo Rock.
+                        </p>
+                    </figcaption>
+                </figure>
 
-            <h2>Tarde</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Hora</th>
-                        <th>Artista</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>16:00 hs</td>
-                        <td>La Zubicaray</td>
-                    </tr>
-                    <tr>
-                        <td>16:30 hs</td>
-                        <td>Mestizo</td>
-                    </tr>
-                    <tr>
-                        <td>17:00 hs</td>
-                        <td>Sonido Cotopaxi</td>
-                    </tr>
-                    <tr>
-                        <td>17:30 hs</td>
-                        <td>Javier Pacheco</td>
-                    </tr>
-                    <tr>
-                        <td>18:00 hs</td>
-                        <td>Banda Zeta</td>
-                    </tr>
-                    <tr>
-                        <td>18:20 hs</td>
-                        <td>La Cumana</td>
-                    </tr>
-                    <tr>
-                        <td>18:45 hs</td>
-                        <td>La Sabrosura</td>
-                    </tr>
-                    <tr>
-                        <td>19:00 hs</td>
-                        <td>La Carátula</td>
-                    </tr>
-                    <tr>
-                        <td>19:20 hs</td>
-                        <td>Sonido Cristal</td>
-                    </tr>
-                    <tr>
-                        <td>19:40 hs</td>
-                        <td>Super Hobby</td>
-                    </tr>
-                    <tr>
-                        <td>19:50 hs</td>
-                        <td>Damián Lescano</td>
-                    </tr>
-                </tbody>
-            </table>
+                <figure>
+                    <img src="../images/noti6.jpg" class="img-fluid" alt="Flecha blanca con fondo rosado">
+                    <figcaption>
+                        <h3>Cortes y desvíos de tránsito</h3>
+                        <p>
+                            Durante el fin de semana y el lunes 29 de octubre habrá cortes y desvíos de tránsito en
+                            diferentes tramos de Montevideo debido a obras, operativas y otras actividades en la vía
+                            pública.
+                        </p>
+                    </figcaption>
+                </figure>
+            </section>
 
-            <h2>Noche</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Hora</th>
-                        <th>Artista</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>20:00 hs</td>
-                        <td>Los Fatales</td>
-                    </tr>
-                    <tr>
-                        <td>20:30 hs</td>
-                        <td>Vanessa Britos</td>
-                    </tr>
-                    <tr>
-                        <td>20:50 hs</td>
-                        <td>Tamo en vivo</td>
-                    </tr>
-                    <tr>
-                        <td>21:00 hs</td>
-                        <td>Dos mujeres</td>
-                    </tr>
-                    <tr>
-                        <td>21:15 hs</td>
-                        <td>Marihel Barboza y su banda</td>
-                    </tr>
-                    <tr>
-                        <td>21:30 hs</td>
-                        <td>Fabricio Mosquera</td>
-                    </tr>
-                    <tr>
-                        <td>22:00 hs</td>
-                        <td>Bola 8</td>
-                    </tr>
-                    <tr>
-                        <td>22:30 hs</td>
-                        <td>Majo y la del 13</td>
-                    </tr>
-                    <tr>
-                        <td>22:45 hs</td>
-                        <td>Los Negroni</td>
-                    </tr>
-                    <tr>
-                        <td>23:00 hs</td>
-                        <td>Karibe con K</td>
-                    </tr>
-                    <tr>
-                        <td>23:15 hs</td>
-                        <td>Martín Quiroga</td>
-                    </tr>
-                    <tr>
-                        <td>23:30 hs</td>
-                        <td>Marcos da Costa</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-        <!-- Inscripción A Sorteo -->
-        <h1 id="inscripcion-sorteo">Inscripción A Sorteo</h1>
-        <section>
-            <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=bdL7go7H9_I" allowfullscreen></iframe>
-            </div>
-            <h2>Sorteamos 20 entradas dobles</h2>
-            <form method="POST" action="#">
-                <p>(*) Todos los campos son obligatorios. Publicaremos los resultados en la web oficial</p>
-                <fieldset disabled>
-                    <div class="form-group">
-                        <label for="txtMail">Mail (*)</label>
-                        <input type="text" id="txtMail" class="form-control">
-                    </div>
-                    <button type="submit" class="btn btn-primary">Inscribirme!</button>
-                </fieldset>
-            </form>
-        </section>
-
-
-        <!-- Novedades -->
-        <h1 id="novedades">Novedades</h1>
-        <section>
-            <figure class="order">
-                <img src="../images/noti1.jpg" alt="Imagen con fondo azul y texto en blanco: Montevideo Tango">
-                <figcaption>
-                    <h3>El Tango, patrimonio de tu ciudad</h3>
-                    <p>
-                        Con actividades abiertas libres y gratuitas, más de 100 artistas de Uruguay y Argentina y gran
-                        producción artística, la Plaza Matriz será anfitriona de la primera edición de Montevideo
-                        Tango.
-                    </p>
-                </figcaption>
-            </figure>
-
-            <figure class="order">
-                <img src="../images/noti2.jpg" alt="Mapa de Paso Molino">
-                <figcaption>
-                    <h3>Montevideo de las Artes llega a Paso Molino</h3>
-                    <p>
-                        El Festival Montevideo de las Artes cerrará su ciclo de espectáculos barriales en Paso Molino.
-                    </p>
-                </figcaption>
-            </figure>
-
-            <figure class="order">
-                <img src="../images/noti3.jpg" alt="Imagen con el logo para el año 2018 de la carrera de San Felipe y Santiago">
-                <figcaption>
-                    <h3>Inscripciones abiertas para correr la San Felipe y Santiago</h3>
-                    <p>
-                        Están abiertas las preinscripciones para participar en la 24ª edición de la carrera San Felipe
-                        y Santiago, que se realizará el sábado 17 de noviembre por la rambla montevideana.
-                    </p>
-                </figcaption>
-            </figure>
-
-            <figure class="order">
-                <img src="../images/noti4.jpg" alt="Imagen con el logo para el año 2018 de la fiesta de los jóvenes">
-                <figcaption>
-                    <h3>Viví Mojo, una fiesta que celebra la juventud</h3>
-                    <p>
-                        Desde el 3 al 16 de noviembre tendrá lugar la primera bienal de la Juventud de Montevideo, con
-                        espectáculos en vivo, actividades, fotogalería, ferias y más, con entrada libre, en el Parque
-                        Rodó.
-                    </p>
-                </figcaption>
-            </figure>
-
-            <figure class="order">
-                <img src="../images/noti5.jpg" alt="Imagen con el logo para el año 2018 de Montevideo Rock">
-                <figcaption>
-                    <h3>Montevideo Rock</h3>
-                    <p>
-                        El evento se realizará en la Rural del Prado de Montevideo. Es el lugar ideal por sus
-                        condiciones e infraestructura y porque fue donde se realizó el primer Montevideo Rock.
-                    </p>
-                </figcaption>
-            </figure>
-
-            <figure class="order">
-                <img src="../images/noti6.jpg" alt="Flecha blanca con fondo rosado">
-                <figcaption>
-                    <h3>Cortes y desvíos de tránsito</h3>
-                    <p>
-                        Durante el fin de semana y el lunes 29 de octubre habrá cortes y desvíos de tránsito en
-                        diferentes tramos de Montevideo debido a obras, operativas y otras actividades en la vía
-                        pública.
-                    </p>
-                </figcaption>
-            </figure>
-        </section>
-
+        </div>
     </div>
+
+    <a href="#home" id="gohome">&#94;</a>
 
 
 
