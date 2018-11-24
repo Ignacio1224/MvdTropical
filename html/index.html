@@ -22,7 +22,7 @@
         <h1 class="d-none d-sm-block col-md-12 text-white text-center">Montevideo Tropical</h1>
 
         <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-            <h1 class="d-xs-block col-xs-10 d-sm-none text-white">Montevideo Tropical</h1>
+            <h1 class="d-xs-block col-xs-1 d-sm-none text-white">Montevideo Tropical</h1>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-menu-principal"
                 aria-controls="nav-menu-principal" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -37,7 +37,7 @@
             </div>
         </nav>
 
-        <div class="bg-light p-2">
+        <div class="bg-light p-2 p-sm-5">
             <div class="d-none d-sm-block col-sm-12">
                 <!-- Slider -->
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -73,9 +73,9 @@
             </div>
 
             <!-- Informacion -->
-            <h1 id="informacion" class="text-secondary">Información</h1>
-            <section>
-                <article>
+            <section class="row">
+                <h1 id="informacion" class="bg-dark col-12 mt-2">Información</h1>
+                <article class="col-12">
                     <h2>Festival por la convivencia</h2>
                     <p>
                         Los días 10, 17 y 18 de noviembre en la Rural del Prado (Lucas Obes 1011) se realizarán dos
@@ -114,13 +114,7 @@
                     </p>
 
                 </article>
-                <h2 class="d-sm-none d-xs-block col-xs-2">Montevideo Tropical</h2>
-                <figure>
-                    <img src="../images/mvdT_logo.jpg" class="img-fluid" alt="lo que sea">
-                    <figcaption class="d-sm-none d-xs-block col-xs-2">Montevideo Tropical</figcaption>
-                </figure>
-
-                <aside class="d-none">
+                <section class="d-none d-sm-block d-md-none bg-secondary p-2">
                     <h2>Consideraciones</h2>
 
                     <strong>No se permite</strong>
@@ -137,45 +131,50 @@
 
                     <strong>Ingreso</strong>
                     <p>Entrada por Pelossi</p>
+                </section>
 
-                </aside>
-
-                
-                <figure class="d-none">
-                    <img src="../images/icon1.jpg" alt="Imagen simbolizando el lugar">
-                    <figcaption>
-                        <h3>¿Dónde?</h3>
-                        <p>Rural del Prado (acceso por Avenida Buschental)</p>
-                    </figcaption>
+                <h2 class="col-12 d-sm-none">Montevideo Tropical</h2>
+                <figure class="d-sm-none d-md-block col-sm-12 col-md-6">
+                    <img src="../images/mvdT_logo.jpg" class="img-fluid" alt="lo que sea">
+                    <figcaption class="d-block col-xs-2 d-sm-none">Montevideo Tropical</figcaption>
                 </figure>
 
-                <figure class="d-none">
-                    <img src="../images/icon2.jpg" alt="Imagen de un calendario">
-                    <figcaption>
-                        <h3>¿Cuándo?</h3>
-                        <p>Sábado 10 de noviembre a partir de las 16 horas</p>
-                    </figcaption>
-                </figure>
+                <div class="row">
+                    <figure class="d-none d-sm-block col-sm-6 pt-1">
+                        <img src="../images/icon1.jpg" class="img-fluid" alt="Imagen simbolizando el lugar">
+                        <figcaption>
+                            <h3>¿Dónde?</h3>
+                            <p>Rural del Prado (acceso por Avenida Buschental)</p>
+                        </figcaption>
+                    </figure>
 
-                <figure class="d-none">
-                    <img src="../images/icon3.jpg" alt="Imagen del signo de dinero">
-                    <figcaption>
-                        <h3>Costo</h3>
-                        <p>$300 o dos por $500 en venta vía web en <a href="http://reduts.com.uy/">Red UTS</a> o en
-                            locales
-                            de cobranza de <a href="http://www.redpagos.com.uy/">Red Pagos</a> y en locales de <a href="https://www.tiendainglesa.com.uy/">Tienda
-                                Inglesa</a></p>
-                    </figcaption>
-                </figure>
+                    <figure class="d-none d-sm-block col-sm-6 pt-1">
+                        <img src="../images/icon2.jpg" class="img-fluid" alt="Imagen de un calendario">
+                        <figcaption>
+                            <h3>¿Cuándo?</h3>
+                            <p>Sábado 10 de noviembre a partir de las 16 horas</p>
+                        </figcaption>
+                    </figure>
 
+                    <figure class="d-none d-sm-none">
+                        <img src="../images/icon3.jpg" class="img-fluid" alt="Imagen del signo de dinero">
+                        <figcaption>
+                            <h3>Costo</h3>
+                            <p>$300 o dos por $500 en venta vía web en <a href="http://reduts.com.uy/">Red UTS</a> o en
+                                locales
+                                de cobranza de <a href="http://www.redpagos.com.uy/">Red Pagos</a> y en locales de <a
+                                    href="https://www.tiendainglesa.com.uy/">Tienda
+                                    Inglesa</a></p>
+                        </figcaption>
+                    </figure>
+                </div>
             </section>
 
             <!-- Bandas -->
-            <h1 id="bandas" class="text-secondary">Bandas</h1>
-            <section>
-
-                <h2>Tarde</h2>
-                <table class="table table-bordered">
+            <section class="row">
+                <h1 id="bandas" class="bg-dark col-12 mt-2">Bandas</h1>
+                <h2 class="col-12 text-sm-center">Tarde</h2>
+                <table class="col-10 offset-1 table table-bordered align-self-sm-center">
                     <thead>
                         <tr>
                             <th scope="col">Hora</th>
@@ -230,8 +229,8 @@
                     </tbody>
                 </table>
 
-                <h2>Noche</h2>
-                <table class="table table-bordered">
+                <h2 class="col-12 text-sm-center">Noche</h2>
+                <table class="col-10 offset-1 table table-bordered align-self-sm-center">
                     <thead>
                         <tr>
                             <th scope="col">Hora</th>
@@ -292,14 +291,14 @@
             </section>
 
             <!-- Inscripción A Sorteo -->
-            <h1 id="inscripcion-sorteo" class="text-secondary">Inscripción A Sorteo</h1>
-            <section class="p-3">
+            <section class="row">
+                <h1 id="inscripcion-sorteo" class="bg-dark col-12 mt-2">Inscripción A Sorteo</h1>
                 <div class="d-none embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=bdL7go7H9_I"
-                        allowfullscreen></iframe>
+                    <video class="video-stream html5-main-video" src="https://www.youtube.com/watch?v=bdL7go7H9_I"
+                        allowfullscreen></video>
                 </div>
-                <h2>Sorteamos 20 entradas dobles</h2>
-                <form method="POST" action="#">
+                <h2 class="col-12">Sorteamos 20 entradas dobles</h2>
+                <form method="POST" action="#" class="col-12">
                     <p>(*) Todos los campos son obligatorios. Publicaremos los resultados en la web oficial</p>
                     <fieldset disabled>
                         <div class="form-group">
@@ -315,8 +314,8 @@
 
 
             <!-- Novedades -->
-            <h1 id="novedades" class="text-secondary">Novedades</h1>
-            <section>
+            <section class="row">
+                <h1 id="novedades" class="bg-dark col-12 mt-2">Novedades</h1>
                 <figure class="d-none">
                     <img src="../images/noti1.jpg" alt="Imagen con fondo azul y texto en blanco: Montevideo Tango">
                     <figcaption>
@@ -331,7 +330,7 @@
                 </figure>
 
                 <figure class="d-none">
-                    <img src="../images/noti2.jpg" alt="Mapa de Paso Molino">
+                    <img src="../images/noti2.jpg" class="img-fluid" alt="Mapa de Paso Molino">
                     <figcaption>
                         <h3>Montevideo de las Artes llega a Paso Molino</h3>
                         <p>
@@ -342,7 +341,7 @@
                 </figure>
 
                 <figure class="d-none">
-                    <img src="../images/noti3.jpg" alt="Imagen con el logo para el año 2018 de la carrera de San Felipe y Santiago">
+                    <img src="../images/noti3.jpg" class="img-fluid" alt="Imagen con el logo para el año 2018 de la carrera de San Felipe y Santiago">
                     <figcaption>
                         <h3>Inscripciones abiertas para correr la San Felipe y Santiago</h3>
                         <p>
@@ -354,7 +353,7 @@
                 </figure>
 
                 <figure class="d-none">
-                    <img src="../images/noti4.jpg" alt="Imagen con el logo para el año 2018 de la fiesta de los jóvenes">
+                    <img src="../images/noti4.jpg" class="img-fluid" alt="Imagen con el logo para el año 2018 de la fiesta de los jóvenes">
                     <figcaption>
                         <h3>Viví Mojo, una fiesta que celebra la juventud</h3>
                         <p>
@@ -367,7 +366,7 @@
                     </figcaption>
                 </figure>
 
-                <figure>
+                <figure class="col-sm-6">
                     <img src="../images/noti5.jpg" class="img-fluid" alt="Imagen con el logo para el año 2018 de Montevideo Rock">
                     <figcaption>
                         <h3>Montevideo Rock</h3>
@@ -378,7 +377,7 @@
                     </figcaption>
                 </figure>
 
-                <figure>
+                <figure class="col-sm-6">
                     <img src="../images/noti6.jpg" class="img-fluid" alt="Flecha blanca con fondo rosado">
                     <figcaption>
                         <h3>Cortes y desvíos de tránsito</h3>
@@ -394,7 +393,9 @@
         </div>
     </div>
 
-    <a href="#home" id="gohome">&#94;</a>
+    <p class="text-center text-sm-right">
+        <a href="#home" id="gohome">&#94;</a>
+    </p>
 
 
 
