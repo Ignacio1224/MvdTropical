@@ -21,6 +21,7 @@
         <div id="home"></div>
         <h1 class="d-none d-sm-block col-md-12 text-white text-center">Montevideo Tropical</h1>
 
+        <!-- En clase preguntamos por la estructura visual del menu, y dijiste que lo dejaramos así -->
         <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
             <h1 class="d-xs-block col-xs-1 d-sm-none text-white">Montevideo Tropical</h1>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-menu-principal"
@@ -29,7 +30,7 @@
             </button>
             <div class="collapse navbar-collapse" id="nav-menu-principal">
                 <div class="navbar-nav">
-                    <a class="btn btn-outline-danger active" href="#informacion">Información <span class="sr-only">(current)</span></a>
+                    <a class="btn btn-outline-danger" href="#informacion">Información</a>
                     <a class="btn btn-outline-danger" href="#bandas">Bandas</a>
                     <a class="btn btn-outline-danger" href="#inscripcion-sorteo">Inscripción a Sorteo</a>
                     <a class="btn btn-outline-danger" href="#novedades">Novedades</a>
@@ -294,8 +295,8 @@
             <section class="row">
                 <h1 id="inscripcion-sorteo" class="bg-dark col-12 mt-2">Inscripción A Sorteo</h1>
                 <div class="d-none d-md-block col-md-6 embed-responsive embed-responsive-16by9">
-                    <video class="video-stream html5-main-video" src="https://www.youtube.com/watch?v=bdL7go7H9_I"
-                        allowfullscreen></video>
+                    <iframe class="video-stream html5-main-video embed-responsive-item" src="https://www.youtube.com/embed/bdL7go7H9_I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
                 </div>
                 <h2 class="col-12 col-md-6">Sorteamos 20 entradas dobles</h2>
                 <form method="POST" action="#" class="col-12 col-md-6 offset-md-6">
